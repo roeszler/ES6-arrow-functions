@@ -52,3 +52,10 @@ console.log(returnMultipleLines());
 // * use the return statement.
 // * You should also be able to explain briefly when curly braces are required and when they're not,
 // * as well as when it's necessary to use parentheses in a function's return statement or around a function’s parameters.
+
+// A Comparison
+// 				        for..in				    for..of
+// Applies to		    Enumerable Properties	Iterable Collections
+// Use with Objects?	Yes				    	No
+// Use with Arrays?	    Yes, but not advised	Yes
+// Use with Strings?	Yes, but not advised	Yes
