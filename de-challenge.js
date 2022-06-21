@@ -25,6 +25,16 @@ let students = [
     }
 ];
 
-const makeList = (arr, student) => {
-    students.name
-}
+const makeList = (array, student) => {
+    let calledList = []; // declaring the list
+    for(let i in array){ // for ...in to loop through the array
+        if(student === array[i].name) { // logical test to check value of name: in object
+            calledList = [...array[i].subjects]; // creates matched data into declared list
+        }
+    }
+    return calledList;
+};
+let [first, second, ...rest] = makeList(students, 'John'); // (array, student)
+console.log(first, second, rest) // logs the values assigned from makeList() function
+
+// >> art cad [ 'english', 'maths', 'science' ]
