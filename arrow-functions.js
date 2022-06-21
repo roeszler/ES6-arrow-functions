@@ -18,7 +18,7 @@ let sumArrow = addTwoNumbersArrow(3, 5);
 console.log(sumArrow);
 
 // Single Line Arrow Function With Parameters
-// const addTwoNumbersArrowSimple = (a, b) => (a + b; // also valid
+// const addTwoNumbersArrowSimple = (a, b) => (a + b); // also valid
 const addTwoNumbersArrowSimple = (a, b) => a + b;
 let sumArrowSimple = addTwoNumbersArrow(3, 5);
 console.log(sumArrowSimple);
