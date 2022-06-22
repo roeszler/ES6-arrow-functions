@@ -1,4 +1,4 @@
-# Arrow Functions
+# Arrow, Destructuring, Rest, Map, Filter, Reduce Functions
 
 To use this repository:
 - Click the "Use this template" button in the upper right
