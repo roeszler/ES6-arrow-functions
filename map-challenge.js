@@ -26,9 +26,8 @@ let students = [
 ];
 
 // let [john, ...rest] = students; // destructured array
+// console.log(john, rest)
 
 let [john, ...rest] = students.map(student => [student.name, student.results]); // destructured array targeting one single element []
-
-// console.log(john, rest)
 console.log(john)
 console.log(rest)
