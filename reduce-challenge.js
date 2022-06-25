@@ -25,16 +25,18 @@ let students = [
     }
 ];
 
-const biggest = students.reduce((acc, curr) => {
-    let engResults = curr.results.english;
-    let bestResult = {};
-    if (engResults > acc) { 
-        acc = engResults;
-    }
-    return acc;
-}, 0);
+// const biggest = students.reduce((acc, curr) => {
+//     let engResults = curr.results.english;
+//     let bestResult = {};
+//     if (engResults > acc) { 
+//         acc = engResults;
+//     }
+//     return acc;
+// }, 0);
 
-// console.log(biggest);
+// let studentHighest = students.filter(student => student.results.english === biggest).map(student => ({name: student.name, max: student.results.english}))[0];
+// console.log(studentHighest);
 
-let studentHighest = students.filter(student => student.results.english === biggest).map(student => ({name: student.name, max: student.results.english}))[0];
-console.log(studentHighest);
+const biggest = students.map(student => ({name: student.name, max: student.results.english})).reduce((acc, curr) => (acc.max > curr.max) ? acc : curr, {});
+
+console.log(biggest)
